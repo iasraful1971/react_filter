@@ -1,0 +1,38 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 50px;
+  padding: 0 50px;
+}
+
+.home_panelist-wrapper,
+.home_panel-wrap,
+.home_list-wrap {
+  overflow-y: auto;
+}
+.home_panelist-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.home_panel-wrap {
+  background: rgb(241, 240, 240);
+  flex-basis: 280px;
+  padding: 10px;
+}
+.home_list-wrap {
+  background: rgb(255, 255, 255);
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+  .home_panelist-wrapper {
+    display: block;
+  }
+}
